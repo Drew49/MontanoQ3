@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InheritanceDemo
 {    
-    abstract class Employee:IPhoneBookItem 
+    public abstract class Employee:IPhoneBookItem 
     {
         private static int LastEmpNum = 0;
         public int EmpNum { get; private set; }

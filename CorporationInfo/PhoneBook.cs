@@ -17,9 +17,10 @@ namespace InheritanceDemo
         public string GetPhoneBook()
         {
             string phonebook = "";
-            foreach (string item in PhoneBookEntries)
+            foreach (IPhoneBookItem item in PhoneBookEntries) //AM. Changed string to IPhoneBookItem.
             {
-                phonebook += item.GetContactSummary() + "\n\n";
+                phonebook += item.GetContactSummary()
+                    + "\n\n";
             }
             return phonebook;
         }

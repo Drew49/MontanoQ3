@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InheritanceDemo
 {
-    interface IPhoneBookItem
+    public interface IPhoneBookItem
     {
         string GetContactSummary();
     }

@@ -35,7 +35,7 @@ namespace InheritanceDemo
             return pay;
         }
 
-        public string ToString()
+        public override string ToString() //AM. Added override
         {
             return base.ToString() + " Salary Employee";
         }

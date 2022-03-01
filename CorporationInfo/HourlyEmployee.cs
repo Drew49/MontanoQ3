@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InheritanceDemo
 {
-    public sealed class HourlyEmployee:Employee
+    public sealed class HourlyEmployee:Employee //AM. Made Employee public for access.
     {
         public decimal HourlyRate { get; set; }
 
@@ -20,7 +20,7 @@ namespace InheritanceDemo
             HourlyRate = hourlyRate;
         }
 
-        public string PaySummary 
+        public override string PaySummary 
         {
             get 
             {
